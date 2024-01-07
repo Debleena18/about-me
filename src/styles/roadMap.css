@@ -1,0 +1,212 @@
+/* -------------------------------------------------------------------------- */
+/*                             RoadMap main styles                            */
+/* -------------------------------------------------------------------------- */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#journey {
+  margin: 100px;
+}
+
+/* The middle stick */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 55px;
+  height: 87%;
+  width: 2px;
+  left: 50%;
+  background-color: var(--main-bg-color);
+}
+
+.timeline ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* center pointing */
+.timeline ul li {
+  margin-bottom: 50px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pointContainer {
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--main-bg-color);
+  position: relative;
+}
+
+/* icons center alignment */
+.timeline ul li:nth-child(odd) .pointContainer {
+  left: 4%;
+}
+
+.timeline ul li:nth-child(even) .pointContainer {
+  right: 3.5%;
+}
+
+.pointIcon {
+  height: 20px;
+  width: 20px;
+  color: var(--main-bg-color);
+}
+
+/* align with middle line */
+.timeline ul li .content {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.container {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.timeline ul li:nth-child(odd) .container {
+  flex-direction: row;
+}
+
+.timeline ul li:nth-child(even) .container {
+  flex-direction: row-reverse;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Card Styles                                */
+/* -------------------------------------------------------------------------- */
+
+.timeline .card {
+  width: 20rem;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  border: 1px solid var(--main-bg-color);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: var(--main-bg-color);
+}
+
+.timeline .card .title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 5px 0px 0px;
+}
+
+.timeline .card .date {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0px 0px 2px;
+  font-style: italic;
+  color: white;
+}
+
+.timeline .card .desc {
+  font-size: 1rem;
+  margin: 0px 0px 10px;
+  color: white;
+}
+
+.timeline .card:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: white;
+  transition: 500ms;
+}
+
+.timeline .card:hover .desc,
+.timeline .card:hover .date,
+.timeline .card:hover .title {
+  color: var(--main-bg-color);
+  transition: 500ms;
+}
+
+.timeline ul li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline ul li:nth-child(odd) {
+  text-align: end;
+}
+
+/* .timeline ul li:last-child .card,
+.timeline ul li:nth-last-child(2) .card {
+  background-color: white;
+} */
+
+/* .timeline ul li:last-child .date,
+.timeline ul li:last-child .title,
+.timeline ul li:last-child .desc,
+.timeline ul li:nth-last-child(2) .date,
+.timeline ul li:nth-last-child(2) .title,
+.timeline ul li:nth-last-child(2) .desc {
+  color: var(--main-bg-color);
+} */
+
+/* .timeline ul li:last-child .card:hover,
+.timeline ul li:nth-last-child(2) .card:hover {
+  background-color: var(--main-bg-color);
+} */
+
+/* .timeline ul li:last-child .card:hover .date,
+.timeline ul li:last-child .card:hover .title,
+.timeline ul li:last-child .card:hover .desc,
+.timeline ul li:nth-last-child(2) .card:hover .date,
+.timeline ul li:nth-last-child(2) .card:hover .title,
+.timeline ul li:nth-last-child(2) .card:hover .desc {
+  color: white;
+} */
+
+.timeline ul li:nth-last-child(3) .card {
+  border: 1px solid var(--dark-shade-color);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Responsive                                 */
+/* -------------------------------------------------------------------------- */
+
+/* @media (max-width: 800px) {
+  .pointContainer {
+    min-width: 15px;
+    height: 15px;
+  }
+
+  html,
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .pointContainer {
+    min-width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+
+  p {
+    padding: 10px !important;
+  }
+} */

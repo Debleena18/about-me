@@ -1,0 +1,47 @@
+.header-route-container {
+  position: absolute;
+  left: 10px;
+  top: 25px;
+}
+
+.header-route-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.list-item {
+  list-style: none;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: whitesmoke;
+  position: relative;
+}
+
+.list-item a {
+  cursor: url("../assets/cursor-link.cur"), auto;
+}
+
+.list-item::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: whitesmoke;
+  left: 50%;
+  bottom: -5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.list-item:hover::after {
+  width: 106%;
+  left: -2.9%;
+}
+
+.list-item a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}

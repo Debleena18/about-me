@@ -1,0 +1,116 @@
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+}
+
+.showSkills {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.skillBox {
+  border: 1px solid #efedfe;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  width: 30%;
+  height: 100px;
+  overflow: hidden;
+  padding: 10px;
+  margin: 10px;
+}
+
+.skillIconBall {
+  border-radius: 100%;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillSVG {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  overflow: "hidden";
+}
+
+.skillDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 25%;
+  position: relative;
+  top: 10px;
+}
+
+.skillTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.skillText {
+  color: var(--accent-color);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  On Hover                                  */
+/* -------------------------------------------------------------------------- */
+
+.card2 {
+  width: 30%;
+  height: 100px;
+  display: block;
+  top: 0px;
+  position: relative;
+  background-color: var(--super-light-shade-color);
+  border-radius: 12px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+  justify-content: center;
+}
+.card2:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid var(--accent-color);
+  background-color: var(--nearly-white-shade-color);
+}
+.card2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: var(--dark-shade-color);
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(2);
+  transform-origin: 50% 50%;
+  transition: transform 0.15s ease-out;
+}
+.card2:hover:before {
+  transform: scale(2.5);
+}
+.card2:hover .skillIconBall {
+  position: absolute;
+}
+/* .card2:hover .SkillDesc {
+  justify-content: center;
+  width: 15rem;
+  position: absolute;
+  top: 30px;
+  right: 11px;
+} */

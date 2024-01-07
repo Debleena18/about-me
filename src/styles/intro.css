@@ -1,0 +1,165 @@
+@keyframes stretch {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  5% {
+    opacity: 0.8; 
+  }
+  10% {
+    opacity: 1;
+    transform: translate(0%, 0%) scale(1);
+  }
+  90% {
+    opacity: 1;
+    transform: translate(0%, 0%) scale(1);
+  }
+  95% {
+    opacity: 0;
+    transform: translate(0%, 0%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0%, 0%) scale(1);
+  }
+}
+
+.intro-text {
+  z-index: 5;
+  animation-name: stretch;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+#changeSalutation:after {
+  content: "";
+  animation: changeSalutation 14s linear infinite;
+}
+@keyframes changeSalutation {
+  0% {
+    content: "Hi I am";
+  }
+  99% {
+    content: "I love to do";
+  }
+  100% {
+    content: "Hi I am";
+  }
+}
+
+
+#changeHeader:after {
+  content: "";
+  animation: changeHeader 14s linear infinite;
+}
+@keyframes changeHeader {
+  0% {
+    content: "Debleena Sarkar";
+  }
+  99% {
+    content: "Front-end Development";
+  }
+  100% {
+    content: "Debleena Sarkar";
+  }
+}
+
+#changeDesc:after {
+  content: "";
+  animation: changeDesc 14s linear infinite;
+}
+@keyframes changeDesc {
+  0% {
+    content: "Embarking on the digital canvas, I craft immersive experiences as a front-end web & mobile sorcerer, weaving magic with CSS.";
+  }
+  99% {
+    content: "Proficient in the arts of HTML, CSS, JavaScript, React.js, and the enchanting realm of React Native.";
+  }
+  100% {
+    content: "Embarking on the digital canvas, I craft immersive experiences as a front-end web & mobile sorcerer, weaving magic with CSS.";
+  }
+}
+
+.meter {
+  height: 5px;
+  position: relative;
+  z-index: -1;
+  background: rgba(240, 240, 240, 0.397);
+  animation: progress 7s ease-in infinite;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  95% {
+    width: 93%;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    width: 93%;
+  }
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+.meter > span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+  z-index: 1;
+  animation: move 2s ease-in-out infinite;
+  overflow: hidden;
+}
+
+.animate > span::after {
+  display: none;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0px 0px;
+  }
+  50% {
+    background-position: 250px 20px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+
+.meter > span::after,
+.animate > span > span {
+  animation: move 2.5s linear infinite;
+}

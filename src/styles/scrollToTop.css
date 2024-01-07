@@ -1,0 +1,76 @@
+/* scrollToTop.css */
+.scroll-container-outer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.scroll-container-outer.visible {
+  opacity: 1;
+}
+
+.scroll-btn-normal {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px 0 0 50px;
+  background: radial-gradient(
+    100% 100% at top right,
+    var(--light-shade-color),
+    var(--main-bg-color)
+  );
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: width 0.2s ease-in-out, transform 0.2s ease-in-out;
+  transform: translateX(100%); /* Initially off-screen to the right */
+}
+
+.scroll-btn-normal:hover {
+  transform: translateX(0); /* Slide in from the right on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-btn-hover {
+  width: 140px;
+  height: 60px;
+  border-radius: 50px 0 0 50px;
+  background: radial-gradient(
+    100% 100% at top right,
+    var(--light-shade-color),
+    var(--main-bg-color)
+  );
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: width 0.2s ease-in-out;
+}
+
+.scroll-btn-hover:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-btn-hover .btn-text {
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.scroll-btn-normal {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+}
+
+.scroll-btn-hover {
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+}

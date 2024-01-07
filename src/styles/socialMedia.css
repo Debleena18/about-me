@@ -1,0 +1,128 @@
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  transition: all 0.35s;
+  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn:hover {
+  cursor: url("../assets/cursor-link.cur"), auto;
+}
+.social-btns .btn .fa {
+  transform: scale(0.6);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                       Social Media Colors Start Here                       */
+/* -------------------------------------------------------------------------- */
+.social-btns .btn.facebook:before {
+  background-color: #4267b2;
+}
+.social-btns .btn.facebook {
+  fill: #4267b2;
+}
+.social-btns .btn.instagram:before {
+  background: radial-gradient(
+      circle farthest-corner at 35% 90%,
+      #fec564,
+      transparent 50%
+    ),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 20% -50%,
+      #5258cf,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 60% -20%,
+      #893dc2,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    linear-gradient(
+      #6559ca,
+      #bc318f 30%,
+      #e33f5f 50%,
+      #f77638 70%,
+      #fec66d 100%
+    );
+}
+.social-btns .btn.instagram {
+  fill: #d9317a;
+}
+.social-btns .btn.github:before {
+  background-color: #211f1f;
+}
+.social-btns .btn.github {
+  fill: #211f1f;
+}
+.social-btns .btn.linkedin:before {
+  background-color: #0e76a8;
+}
+.social-btns .btn.linkedin {
+  fill: #0e76a8;
+}
+.social-btns .btn.whatsapp:before {
+  background-color: #25d366;
+}
+.social-btns .btn.whatsapp {
+  fill: #25d366;
+}
+/* -------------------------------------------------------------------------- */
+/*                        Social Media Colors End Here                        */
+/* -------------------------------------------------------------------------- */
+
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  fill: #fff;
+  transform: scale(0.75);
+}
+.social-btns {
+  height: 490px;
+  width: 100px;
+  margin: 25px 40px 20px 0px;
+  font-size: 0;
+  position: relative;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  line-height: 70px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.3);
+  opacity: 0.99;
+}
+.social-btns .btn:before {
+  content: "";
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 38px;
+  vertical-align: middle;
+}

@@ -1,0 +1,25 @@
+#loveIndiaContainer {
+  position: absolute;
+  right: 25vw;
+  bottom: -50.8vh;
+  transform: rotate(-24.5deg);
+}
+
+#loveIndia {
+  width: 45vw;
+  opacity: 0.8;
+}
+
+@media (width: 1920px) {
+  #loveIndiaContainer {
+    right: 26.2vw;
+    transform: rotate(-28deg);
+  }
+}
+
+@media (width: 1080px) {
+  #loveIndiaContainer {
+    right: 27.3vw;
+    transform: rotate(-32deg);
+  }
+}

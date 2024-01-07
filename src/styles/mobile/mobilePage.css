@@ -1,0 +1,52 @@
+#mobileContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 85vh;
+  color: #3a3a3a;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Text Styles                                */
+/* -------------------------------------------------------------------------- */
+
+#mobileName {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+#mobileTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+#mobileDesc {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Pic Styles                                 */
+/* -------------------------------------------------------------------------- */
+
+#picContainer {
+  margin-bottom: 1em;
+}
+
+#myPic {
+  height: 50vw;
+  width: 50vw;
+  overflow: hidden;
+  border: 5px solid white;
+  border-radius: 150px;
+  transition: 0.4s;
+  object-fit: cover;
+}
+
+#myPic:hover {
+  transform: scale(1.1);
+  border-color: #d0d0ff;
+  box-shadow: 2px 2px 6px #888888;
+}
