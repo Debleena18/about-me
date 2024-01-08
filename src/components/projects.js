@@ -5,7 +5,6 @@ import "swiper/css";
 import Portfolio_V1 from "../assets/Portfolio_V1.png";
 import NetflixClone from "../assets/NetflixClone.png";
 import GymApp from "../assets/GymApp.png";
-import { brown } from "@mui/material/colors";
 // import { themeContext } from "../../Context";
 
 const Projects = () => {

@@ -9,7 +9,7 @@
   left: -110%;
 }
 .social-btns .btn:hover {
-  cursor: url("../assets/cursor-link.cur"), auto;
+  cursor: url("../assets/cursor-link.png"), auto;
 }
 .social-btns .btn .fa {
   transform: scale(0.6);

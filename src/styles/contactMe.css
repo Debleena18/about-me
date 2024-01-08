@@ -141,7 +141,7 @@
   background-color: var(--main-bg-color);
   color: #fff;
   border-bottom: 4px solid var(--main-bg-color);
-  cursor: url("../assets/cursor-link.cur"), auto;
+  cursor: url("../assets/cursor-link.png"), auto;
 }
 .button:hover:before {
   transform: skewX(-45deg) translateX(13.5em);
@@ -149,5 +149,5 @@
 }
 .button:disabled {
   opacity: 0.5;
-  cursor: url("../assets/cursor-normal.cur"), auto;
+  cursor: url("../assets/cursor-normal.png"), auto;
 }

@@ -21,7 +21,7 @@
 }
 
 .myLogo:hover {
-  /* cursor: url("../assets/cursor-link.cur"), auto; */
+  /* cursor: url("../assets/cursor-link.png"), auto; */
   animation-name: bounce;
   filter: drop-shadow(2px 1px 0 white) drop-shadow(-2px -1px 0 white)
     brightness(1);

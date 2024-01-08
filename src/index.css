@@ -1,10 +1,8 @@
 :root {
-  --main-bg-color: #ffbba3;
-  --dark-shade-color: #d0a78a;
-  --light-shade-color: #ffdfc1;
-  --super-light-shade-color: #ffebd9;
-  --nearly-white-shade-color: #fcf3e6;
-  --accent-color: #6f4f37;
+  --main-bg-color: #00b0ff;
+  --dark-shade-color: #01579b;
+  --light-shade-color: #00e5ff;
+  --super-light-shade-color: #cbecff;
 }
 
 body {
@@ -14,7 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: url("./assets/cursor-normal.cur"), auto;
+  cursor: url("./assets/cursor-normal.png"), auto;
   overflow: overlay;
   /* To work in night */
   /* background-color: #333; */

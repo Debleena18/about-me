@@ -21,7 +21,7 @@
 }
 
 .list-item a {
-  cursor: url("../assets/cursor-link.cur"), auto;
+  cursor: url("../assets/cursor-link.png"), auto;
 }
 
 .list-item::after {
