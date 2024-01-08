@@ -9,6 +9,7 @@ import linuxTuxLogo from "../assets/linux-tux.svg";
 import gitIcon from "../assets/git-icon.svg";
 import javascriptLogo from "../assets/javascript.svg";
 import jestLogo from "../assets/jest.svg";
+import azureLogo from "../assets/azure.svg";
 import reactTestingLibraryLogo from "../assets/testing-library.svg";
 import reactNativeIcon from "../assets/react-native-icon.svg";
 import "../styles/skills.css";
@@ -27,6 +28,7 @@ const logoImages = {
   gitIcon: gitIcon,
   javascriptLogo: javascriptLogo,
   jestLogo: jestLogo,
+  azureLogo: azureLogo,
   reactTestingLibraryLogo: reactTestingLibraryLogo,
 };
 
