@@ -29,6 +29,7 @@
     "react-hover": "^3.0.1",
     "react-scripts": "5.0.1",
     "react-tooltip": "^5.25.1",
+    "swiper": "^11.0.5",
     "web-vitals": "^2.1.4"
   },
   "eslintConfig": {

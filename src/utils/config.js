@@ -15,6 +15,7 @@ export const mySkillsList = [
   { skillName: "Swagger", logoImageName: "swaggerLogo", skillDescription: "Describes RESTful APIs for clarity and communication." },
   { skillName: "Git", logoImageName: "gitIcon", skillDescription: "Collaborative version control for code management." },
   { skillName: "Jest", logoImageName: "jestLogo", skillDescription: "Tests JavaScript code for quality and reliability." },
+  { skillName: "Azure", logoImageName: "AzureLogo", skillDescription: "Enable authentication in your own React Application by using Azure" },
   { skillName: "React Testing Library", logoImageName: "reactTestingLibraryLogo", skillDescription: "Tests React components with a user-centric approach." },
 ];
 
@@ -23,7 +24,7 @@ export const myRoutes = [
   // { title: "Home", click: "#" },
   { title: "Journey", click: "#journey" },
   { title: "Skills ", click: "#skills" },
-  // { title: "Projects ", click: "#projects" },
+  { title: "Projects ", click: "#projects" },
   { title: "Contact", click: "#ContactMe" },
   { title: "Download Resume ", click: "#resume" },
 ];

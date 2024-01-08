@@ -26,6 +26,7 @@ class SinglePage extends Component {
         <IntroText />
         <RoadMap />
         <Skills />
+        <Projects />
         <ScrollButton />
         <ContactMe />
         <div style={{ position: "relative" }}>

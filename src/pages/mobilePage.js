@@ -5,7 +5,7 @@ const MobilePage = () => {
   return (
     <div id="mobileContainer">
       <IntroPicMobile />
-      <p id="mobileName">Hi, I'm Sourav</p>
+      <p id="mobileName">Hi, I'm Debleena</p>
       <p id="mobileTitle">Thanks for coming here.</p>
       <p id="mobileDesc">
         Sorry, but my website's mobile version is now under construction. Please
