@@ -22,11 +22,11 @@ export const mySkillsList = [
 
 export const myRoutes = [
   // { title: "Home", click: "#" },
-  { title: "Journey", click: "#journey" },
-  { title: "Skills ", click: "#skills" },
-  { title: "Projects ", click: "#projects" },
-  { title: "Contact", click: "#ContactMe" },
-  { title: "Download Resume ", click: "#resume" },
+  { title: "My Journey", click: "#journey" },
+  { title: "Skills Overview", click: "#skills" },
+  { title: "Featured Projects", click: "#projects" },
+  { title: "Get in Touch", click: "#ContactMe" },
+  { title: "Download Resume", click: "#resume" },
 ];
 
 export const myPersonalInfo = [

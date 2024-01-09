@@ -1,7 +1,7 @@
 .header-route-container {
   position: absolute;
   left: 10px;
-  top: 25px;
+  top: -5px;
 }
 
 .header-route-ul {
@@ -9,6 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   text-align: right;
+  align-items: flex-start;
 }
 
 .list-item {
@@ -21,7 +22,7 @@
 }
 
 .list-item a {
-  cursor: url("../assets/cursor-link.png"), auto;
+  cursor: url("../assets/cursor-link.cur"), auto;
 }
 
 .list-item::after {

@@ -45,7 +45,7 @@
     content: "Hi I am";
   }
   99% {
-    content: "I love to";
+    content: "I love to do";
   }
   100% {
     content: "Hi I am";
@@ -59,13 +59,13 @@
 }
 @keyframes changeHeader {
   0% {
-    content: "Sourav Sadhukhan";
+    content: "Debleena Sarkar";
   }
   99% {
-    content: "Design Graphics";
+    content: "Front-end Development";
   }
   100% {
-    content: "Sourav Sadhukhan";
+    content: "Debleena Sarkar";
   }
 }
 
@@ -75,13 +75,13 @@
 }
 @keyframes changeDesc {
   0% {
-    content: "I'm a full-stack web developer that who enjoys designing using CSS and Photoshop.";
+    content: "Embarking on the digital canvas, I craft immersive experiences as a front-end web & mobile sorcerer, weaving magic with CSS.";
   }
   99% {
-    content: "HTML, CSS, Javascript, React js, React Native, and Node js are my areas of competence.";
+    content: "Proficient in the arts of HTML, CSS, JavaScript, React.js, and the enchanting realm of React Native.";
   }
   100% {
-    content: "I'm a full-stack web developer that who enjoys designing using CSS and Photoshop.";
+    content: "Embarking on the digital canvas, I craft immersive experiences as a front-end web & mobile sorcerer, weaving magic with CSS.";
   }
 }
 

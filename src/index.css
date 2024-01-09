@@ -1,8 +1,11 @@
 :root {
-  --main-bg-color: #00b0ff;
-  --dark-shade-color: #01579b;
-  --light-shade-color: #00e5ff;
-  --super-light-shade-color: #cbecff;
+  --main-bg-color:#402b6d ; /* Light lime green, adjust based on preference */
+  --dark-shade-color: #10a690; /* Teal green, adjust based on preference */
+  --light-shade-color: #1166a3; /* Deep sky blue, adjust based on preference */
+  --super-light-shade-color: #3d4987; /* Royal blue, adjust based on preference */
+  --nearly-white-shade-color: #c0f862; /* Dark purple, adjust based on preference */
+  --accent-color: #292055; /* Dark indigo, for a subtle pop of color */
+  
 }
 
 body {
@@ -12,7 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: url("./assets/cursor-normal.png"), auto;
+  cursor: url("./assets/cursor-normal.cur"), auto;
   overflow: overlay;
   /* To work in night */
   /* background-color: #333; */

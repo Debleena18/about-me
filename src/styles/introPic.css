@@ -1,21 +1,73 @@
-.image-conatainer {
+/* General container styling */
+.image-container {
   position: absolute;
   left: 15vw;
   top: 20vh;
 }
 
-.myPic {
-  height: 200px;
+/* Blob image styling */
+.blob-image {
+  position: absolute;
+  width: 360px;
+  height: 400px;
+  transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+}
+
+.blob-image--back {
+  z-index: 2;
+  left: -45px;
+  top: -55px;
+  width: 380px;
+  height: 380px;
+}
+
+.blob-image--front {
+  z-index: 3;
+  left: -40px;
+  top: -75px;
+}
+
+/* Profile pic styling */
+.profile-pic {
+  position: absolute;
+  left: 30px;
+  top: 20px;
   width: 200px;
+  height: 200px;
   overflow: hidden;
   border: 5px solid white;
   border-radius: 150px;
   transition: 0.4s;
   object-fit: cover;
+  z-index: 100;
 }
 
-.myPic:hover {
+.profile-pic:hover {
   transform: scale(1.1);
-  /* border-color: var(--super-light-shade-color); */
-  box-shadow: 2px 2px 6px var(--dark-shade-color);
+  box-shadow: 2px 2px 6px rgb(0,0,0,0.3);
+  z-index: 20;
+}
+
+/* Apply rotation to front blob on hover */
+.rotate {
+  animation: rotateAnimation 2s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+.rotate--front {
+  transform: rotate(-30deg);
+  filter: blur(2px); /* Adjust the blur effect as needed */
+}
+
+.rotate--back {
+  transform: rotate(30deg);
+  filter: blur(3px); /* Adjust the blur effect as needed */
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

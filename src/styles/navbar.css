@@ -54,7 +54,7 @@
   color: white;
   text-align: center;
   line-height: 3.9;
-  cursor: url("../assets/cursor-link.png"), auto;
+  cursor: url("../assets/cursor-link.cur"), auto;
   outline: 0;
 }
 
